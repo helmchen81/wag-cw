@@ -1,0 +1,37 @@
+# Runtime databases and generated SQLite files
+api/data/*.sqlite
+api/data/*.sqlite-*
+api/data/*.db
+
+# Admin credentials, logs, backups and uploaded patches
+admin/data/admin-auth.json
+admin/data/admin-audit.log
+admin/data/backups/*
+admin/data/uploads/*
+
+# Keep protected directories and access-control placeholders
+!admin/data/.htaccess
+!admin/data/index.html
+!admin/data/backups/.gitkeep
+!admin/data/uploads/.gitkeep
+!api/data/.htaccess
+!api/data/index.html
+
+# Temporary patch and backup files
+*.tmp
+*.patchtmp
+*.bak
+*.log
+*.swp
+*~
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
